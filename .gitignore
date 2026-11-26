@@ -1,0 +1,19 @@
+node_modules/
+dist/
+.DS_Store
+*.local
+*.log
+
+# 后端
+agent/.venv/
+agent/.env
+agent/agent_notes/
+__pycache__/
+*.pyc
+
+# 临时
+*.tmp
+.*.tmpdir/
+
+# 本地截图
+_shot/

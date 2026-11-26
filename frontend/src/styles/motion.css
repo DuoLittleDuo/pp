@@ -1,0 +1,70 @@
+/* ============================================================
+   动效 —— 都短、都轻；系统开了「减少动态效果」时由 global.css 统一关掉
+   ============================================================ */
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(22px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0%,
+  92%,
+  100% {
+    transform: scaleY(1);
+  }
+  94% {
+    transform: scaleY(0.08);
+  }
+  96% {
+    transform: scaleY(1);
+  }
+}
+
+@keyframes breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.015);
+  }
+}
+
+/* 标题缓慢淡入并小幅上移 */
+.enter-up {
+  animation: fadeUp 900ms var(--ease) both;
+}
+
+.enter-fade {
+  animation: fadeIn 1200ms var(--ease) both;
+}
+
+/* 逐级延迟 */
+.d1 {
+  animation-delay: 120ms;
+}
+.d2 {
+  animation-delay: 260ms;
+}
+.d3 {
+  animation-delay: 400ms;
+}
+.d4 {
+  animation-delay: 540ms;
+}

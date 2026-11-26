@@ -1,0 +1,110 @@
+/* ============================================================
+   设计变量 —— 全站唯一的颜色、字号、间距来源
+   这一版：暖橙黄纸面 + 深褐字 + 少量高纯度强调色
+   ============================================================ */
+
+:root {
+  /* 纸面：暖橙黄 */
+  --paper: #ddb277; /* 主背景 */
+  --paper-2: #d3a665; /* 次级区块 */
+  --paper-3: #c79654; /* 更深一档 */
+  --paper-4: #e7c491; /* 更浅一档 */
+  --paper-5: #b98748; /* 深色块 */
+
+  /* 文字 */
+  --ink: #241b12; /* 近乎黑的深褐 */
+  --ink-70: #4a3826;
+  --ink-50: #6b543c;
+  --ink-30: #8d7458;
+
+  /* 强调色（在橙黄底上要够深才压得住） */
+  --accent: #a23518; /* 炭火红 */
+  --accent-deep: #7d2612;
+  --green: #3f5136; /* 橄榄墨绿 */
+  --blue: #2c3a4a; /* 靛青 */
+  --ochre: #96651a;
+
+  /* 线条 */
+  --line: rgba(36, 27, 18, 0.22);
+  --line-soft: rgba(36, 27, 18, 0.12);
+  --line-strong: rgba(36, 27, 18, 0.45);
+
+  /* 五个类目 */
+  --c-bowl: #9e3b1c;
+  --c-water: #2f5b4c;
+  --c-tag: #5c6b33;
+  --c-obj: #a66a12;
+  --c-jar: #333f5c;
+
+  /* 六种工艺 */
+  --k-jiaotai: #7d5a3c;
+  --k-wuse: #a83f22;
+  --k-yaobian: #2f5563;
+  --k-zhehong: #8e2f18;
+  --k-kehua: #4a6272;
+  --k-sutao: #7a6240;
+
+  /* 章节底（深浅交替，翻页有呼吸） */
+  --field-1: #ddb277;
+  --field-2: #d3a665;
+  --field-3: #e2bb84;
+  --field-4: #c79654;
+  --field-5: #d8ab6d;
+  --field-6: #cfa063;
+
+  /* 兼容旧变量名（有些组件还在用） */
+  --cream: var(--paper);
+  --cream-2: var(--paper-2);
+  --sand: var(--paper-4);
+  --sand-2: var(--paper-3);
+  --clay: var(--accent);
+  --clay-soft: #c06a44;
+  --clay-deep: var(--accent-deep);
+  --celadon: var(--green);
+  --celadon-deep: #324228;
+  --ink-60: var(--ink-70);
+  --ink-40: var(--ink-50);
+
+  /* 字体 */
+  --font-display: "Playfair Display", "Bodoni MT", Didot, Georgia,
+    "Times New Roman", "Songti SC", serif;
+  --font-cn: "Songti SC", "STSong", "SimSun", "Noto Serif SC", serif;
+  --font-sans: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", system-ui,
+    -apple-system, sans-serif;
+
+  /* 字号阶梯：标题更狠，正文克制 */
+  --fs-mega: clamp(60px, 12.2vw, 188px); /* 封面超大英文，约屏高三分之一 */
+  --fs-display: clamp(56px, 9vw, 150px);
+  --fs-h1: clamp(34px, 4.6vw, 62px);
+  --fs-h2: clamp(26px, 3vw, 40px);
+  --fs-h3: clamp(19px, 1.7vw, 24px);
+  --fs-body: clamp(15px, 1.05vw, 17px);
+  --fs-small: 14px;
+  --fs-micro: 12px;
+
+  /* 间距 */
+  --s1: 8px;
+  --s2: 16px;
+  --s3: 24px;
+  --s4: 40px;
+  --s5: 64px;
+  --s6: 96px;
+  --s7: 140px;
+  --s8: 200px;
+
+  /* 版面 */
+  --pad: clamp(20px, 5.5vw, 104px);
+  --max: 1440px;
+  --nav-h: 76px;
+
+  /* 动效 */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur: 620ms;
+
+  /* 层级 */
+  --z-nav: 100;
+  --z-drawer: 200;
+  --z-agent: 300;
+  --z-welcome: 400;
+}
